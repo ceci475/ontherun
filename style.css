@@ -1,4 +1,4 @@
-/*
+*
 #scrollIcon{
     margin-bottom: -13rem;
  justify-content: center;
@@ -188,43 +188,26 @@
 
 .typewriter h6 {
     font-family: "Menlo";
-    overflow: hidden;
-    /* Ensures the content is not revealed until the animation */
-    border-right: .10em solid #0737A8;
-    /* The typwriter cursor */
-    white-space: nowrap;
-    /* Keeps the content on a single line */
-    margin: 0 auto;
-    /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .em;
-    /* Adjust as needed */
-    animation:
-        typing 3.5s steps(40, end),
-        blink-caret .75s step-end infinite;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .10em solid #0737A8; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
 }
 
 /* The typing effect */
 @keyframes typing {
-    from {
-        width: 0
-    }
-
-    to {
-        width: 100%
-    }
+  from { width: 0 }
+  to { width: 100% }
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-
-    from,
-    to {
-        border-color: transparent
-    }
-
-    50% {
-        border-color: #0737A8;
-    }
+  from, to { border-color: transparent }
+  50% { border-color:  #0737A8; }
 }
 
 
@@ -383,16 +366,13 @@ h4 {
 h5 {
     font-size: 1.4rem;
     font-family: "Menlo", sans-serif;
-    display: flex;
-    justify-content: center;
 }
 
 h6 {
     font-family: "Raleway", sans-serif;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 2.5rem;
-}
+    font-size: 2.5rem;}
 
 p {
     font-family: "Menlo", sans-serif;
@@ -445,7 +425,7 @@ a:hover {
 .form-control {
     background-color: transparent;
     font-style: "Menlo";
-    color: #0737A8;
+    color:#0737A8;
     border-radius: 0rem;
     border: 1px solid #0737A8;
 }
@@ -453,7 +433,7 @@ a:hover {
 .form-check-input {
     background-color: transparent;
     font-style: "Menlo";
-    color: #0737A8;
+    color:#0737A8;
     border: 1px solid #0737A8;
 }
 
@@ -495,20 +475,3 @@ button:active {
     transform: translate(-50%, 30%);
 }
 
-/*
-.costum-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.custom-icon {
-    margin: 0 auto;
-    display: inherit;
-    margin-bottom: 0.5rem;
-}
-*/
-
-.card-img-top {
-    width: 1;
-}
