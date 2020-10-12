@@ -88,7 +88,7 @@ gsap.from("h3", {
 //
 
 
-typewriting animation
+//typewriting animation
 
 
 //var content = 'The 2020 routine hand gel';
