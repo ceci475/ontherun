@@ -266,46 +266,45 @@
 
 
 
-.typewriter h6 {
-    font-family: "Menlo";
-    overflow: hidden;
-    /* Ensures the content is not revealed until the animation */
-    border-right: .10em solid #0737A8;
-    /* The typwriter cursor */
-    white-space: nowrap;
-    /* Keeps the content on a single line */
-    margin: 0 auto;
-    /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .em;
-    /* Adjust as needed */
-    animation:
-        typing 3.5s steps(40, end),
-        blink-caret .75s step-end infinite;
+/* Animation */
+
+h1 {
+  animation: animated-text 2s steps(29,end) 1s 1 normal both,
+             animated-cursor 600ms steps(29,end) infinite;
 }
 
-/* The typing effect */
-@keyframes typing {
-    from {
-        width: 0
-    }
-
-    to {
-        width: 100%
-    }
+h1: nth-child(2)
+{
+    white-space:nowrap;
+    overflow:hidden;
+   animation: animated-text2 4s steps(29,end) 1s 1 normal both;
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
 }
 
-/* The typewriter cursor effect */
-@keyframes blink-caret {
+/* text animation */
 
-    from,
-    to {
-        border-color: transparent
-    }
-
-    50% {
-        border-color: #0737A8;
-    }
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 472px;}
 }
+
+@keyframes animated-text2{
+  from{width: 0;}
+  to{width: 472px;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+  from{border-right-color: rgba(0,255,0,.75);}
+  to{border-right-color: transparent;}
+}
+
+
+
 
 
 .hero {
@@ -424,6 +423,8 @@
 
 h1 {
     font-family: "Menlo", sans-serif;
+     font-size: 1.7rem;
+    width: 400px;
 }
 
 h2 {
