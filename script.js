@@ -105,3 +105,23 @@ gsap.from("h3", {
 //    }, 100);
 //});
 
+gsap.to(".poster", {
+    opacity: 0,
+    scale: .1,
+    duration: 2,
+    ease: "none",
+    scrollTrigger: {
+        trigger: "#event",
+        start: "top center",
+        end: "center top",
+        scrub: true,
+      /*  markers: true, */
+    }
+});
+
+
+gsap.to(".mere", {
+    x:200,
+    duration: 2,
+    ease: "ease.out(1, 0.3)",
+});
