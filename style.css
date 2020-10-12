@@ -19,7 +19,7 @@
 	margin: 0 auto;
 	width: 24px;
 	height: 100px;
-	margin-bottom: -250px;
+	margin-bottom: -200px;
     margin-top: 150px;
 }
 
@@ -454,12 +454,12 @@ button,
 }
 
 button:hover {
-    color: #0737A8;
+   background-color: #0737A8;
     transform: scale(1.1);
 }
 
 button:active {
-    background-color: black;
+    background-color: #0737A8;
 }
 
 .navbar-toggler {
