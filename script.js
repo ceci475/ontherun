@@ -1,6 +1,8 @@
 gsap.registerPlugin(ScrollTrigger);
 
 
+// Effekt på tekst og overskrift
+
 const sections = document.querySelectorAll("section");
 
 sections.forEach((section) => {
@@ -20,6 +22,7 @@ sections.forEach((section) => {
     });
 });
 
+// Effekt på poster
 
 gsap.from(".poster", {
     opacity: 0,
@@ -42,13 +45,14 @@ gsap.from(".mere", {
     ease: "ease.out(1, 0.3)",
 });
 
-
-
-
+// Effekt på billeder
 
 var rellax = new Rellax(".rellax", {
   center: true,
 });
+
+
+// Top op knap
 
 //Get the button:
 mybutton = document.getElementById("myBtn");
