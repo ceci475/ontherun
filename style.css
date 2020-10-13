@@ -353,9 +353,9 @@ html {
 }
 
 .spin {
-    margin-top: 4rem;
+    padding: 200px;
     animation-name: spin;
-    animation-duration: 5000ms;
+    animation-duration: 4000ms;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
