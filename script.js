@@ -44,6 +44,8 @@ gsap.from(".mere", {
 
 
 
+
+
 var rellax = new Rellax(".rellax", {
   center: true,
 });
