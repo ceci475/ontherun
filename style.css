@@ -475,6 +475,14 @@ h6 {
     font-size: 2.5rem;
 }
 
+h7 {
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+       font-weight: 600;
+    line-height: 2rem;
+}
+
 p {
     font-family: "Menlo", sans-serif;
     font-size: 1.2rem;
