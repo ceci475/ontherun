@@ -353,7 +353,7 @@ html {
 }
 
 .spin {
-    padding: 200px;
+    padding: 150px;
     animation-name: spin;
     animation-duration: 4000ms;
     animation-iteration-count: infinite;
