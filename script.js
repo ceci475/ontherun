@@ -1,111 +1,27 @@
-//gsap.registerPlugin(ScrollTrigger);
-//
-//const divs= document.querySelectorAll("#sektion1 >div");
-//
-//gsap.from(divs, {
-//    opacity:0,
-//    translateY: 100,
-//    duration:2,
-//    stagger: 1,
-//    ScrollTrigger: {
-//        trigger: "#sektion1",
-//        start: "top center",
-//        end: "center center",
-//        markers: true
-//    }
-//
-//});
-/*
-
 gsap.registerPlugin(ScrollTrigger);
 
-const divs= document.querySelectorAll("card-title");
 
-card-title.forEach((card-title)=>{
-    const divs=
-          section.querySelectorAll("div");
+const sections = document.querySelectorAll("section");
 
-gsap.from(card-title, {
-    opacity:0,
-    translateY: 100,
-    duration:2,
-    stagger: 1,
-    ScrollTrigger: {
-        trigger: "#sektion1",
-        start: "top center",
-        end: "center center",
-        markers: true,
-        scrub:true
-    }
-});
-});
+sections.forEach((section) => {
+    const p = section.querySelectorAll("p, h3");
 
-*/
-
-gsap.registerPlugin(ScrollTrigger);
-
-gsap.from("p", {
-    opacity:0,
-    translateY:100,
-    duration:2,
-    stagger: 1,
-    ScrollTrigger: {
-        trigger: "#sektion1",
-        start: "top center",
-        end: "center center",
-        markers: true
-    }
-});
-
-gsap.from("h3", {
-    opacity:0,
-    translateY:100,
-    duration:2,
-    stagger: 1,
-    ScrollTrigger: {
-        trigger: "#sektion1",
-        start: "center 75%",
-        end: "center 25%",
-        markers: true
-    }
+    gsap.from(p, {
+        opacity: 0,
+        y: 100,
+        duration: 1,
+        stagger: 1,
+        scrollTrigger: {
+            trigger: section,
+            start: "top center",
+            end: "center center",
+/*            markers: true,*/
+        },
+    });
 });
 
 
-//
-//gsap.utils.toArray(".panel").forEach((panel, i) => {
-//  ScrollTrigger.create({
-//    trigger: panel,
-//    start: "top top",
-//    pin: true,
-//    pinSpacing: false
-//  });
-//});
-//
-//
-//ScrollTrigger.create({
-//  snap: 1 / 4 // snap whole page to the closest section!
-//});
-//
-
-
-//typewriting animation
-
-
-//var content = 'The 2020 routine hand gel';
-//
-//var ele = '<span>' + content.split('').join('</span><span>') + '</span>';
-//
-//
-//$(ele).hide().appendTo('h1').each(function (i) {
-//    $(this).delay(100 * i).css({
-//        display: 'inline',
-//        opacity: 0
-//    }).animate({
-//        opacity: 1
-//    }, 100);
-//});
-
-gsap.to(".poster", {
+gsap.from(".poster", {
     opacity: 0,
     scale: .1,
     duration: 2,
@@ -113,15 +29,22 @@ gsap.to(".poster", {
     scrollTrigger: {
         trigger: "#event",
         start: "top center",
-        end: "center top",
+        end: "top top",
         scrub: true,
-      /*  markers: true, */
+        /*   markers: true*/
     }
 });
 
 
-gsap.to(".mere", {
-    x:200,
+gsap.from(".mere", {
+    x: 200,
     duration: 2,
     ease: "ease.out(1, 0.3)",
 });
+
+
+
+var rellax = new Rellax(".rellax", {
+  center: true,
+});
+
