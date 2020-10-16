@@ -1,10 +1,8 @@
-html {
-  scroll-behavior: smooth;
+.size {
+    width: 100px;
+    height: 100px;
 }
-
-
-
-* #scrollIcon {
+#scrollIcon {
     margin-bottom: -13rem;
     justify-content: center;
     border: solid black;
@@ -13,13 +11,10 @@ html {
     padding: 3px;
 }
 
-*/ *,
-*:before,
-*:after {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+html {
+  scroll-behavior: smooth;
 }
+
 
 
 .mouse_scroll {
@@ -30,7 +25,6 @@ html {
     margin-bottom: -200px;
     margin-top: 150px;
 }
-
 
 .m_scroll_arrows {
     display: block;
@@ -50,7 +44,6 @@ html {
     height: 16px;
 }
 
-
 .unu {
     margin-top: 1px;
 }
@@ -61,7 +54,6 @@ html {
     -webkit-animation: mouse-scroll 1s infinite;
     -moz-animation: mouse-scroll 1s infinite;
     animation: mouse-scroll 1s infinite;
-
 }
 
 .unu {
@@ -70,7 +62,7 @@ html {
     -webkit-animation-direction: alternate;
 
     animation-direction: alternate;
-    animation-delay: alternate;
+    animation-delay: .1s;
 }
 
 .doi {
@@ -270,9 +262,6 @@ html {
     }
 }
 
-
-
-
 .hero {
     background-size: cover;
         background-attachment: fixed;
@@ -303,7 +292,6 @@ html {
     background-position: 20% 50%;
     background-image: url(img/takemewithyou.jpg);
 }
-
 
 .col1 {
     background: #E6EBE8;
@@ -339,8 +327,6 @@ html {
     height: 100%;
 }
 
-
-
 .card {
     background-color: transparent;
     border: none;
@@ -370,7 +356,6 @@ html {
     }
 }
 
-
 .slide-fwd-center {
     -webkit-animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
     animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
@@ -387,9 +372,6 @@ html {
         transform: translateZ(200px);
     }
 }
-
-
-
 
 h1 {
     font-family: "Menlo", sans-serif;
@@ -453,7 +435,6 @@ p {
     padding-right: 3rem;
 }
 
-
 a {
     color: #0737A8;
     letter-spacing: 0.1rem;
@@ -471,10 +452,8 @@ label {
     padding: 5rem;
     text-align: center;
     font-weight: 500;
-        margin-top: 50px;
+    margin-top: 50px;
 }
-
-
 
 footer {
     height: 15vh;
@@ -491,10 +470,9 @@ a:hover {
     color: black;
 }
 
-
 .form-control {
     background-color: transparent;
-    font-style: "Menlo";
+
     color: #0737A8;
     border-radius: 0rem;
     border: 1px solid #0737A8;
@@ -502,7 +480,7 @@ a:hover {
 
 .form-check-input {
     background-color: transparent;
-    font-style: "Menlo";
+
     color: #0737A8;
     border: 1px solid #0737A8;
 }
@@ -511,13 +489,12 @@ a:hover {
     border-radius: 0em;
 }
 
-
 button,
 .btn {
     background-color: transparent;
     text-align: center;
     text-decoration: none;
-    font-style: "Menlo";
+
     letter-spacing: 1px;
     color: #0737A8;
     text-transform: uppercase;
@@ -526,8 +503,6 @@ button,
     border: 1px solid #0737A8;
     border-radius: 0rem;
 }
-
-
 
 .btn-primary:hover {
     background-color: #0737A8;
